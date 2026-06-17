@@ -1012,7 +1012,7 @@ function resetAccordionUI() {
         
                 function initModel() {
             const loader = new GLTFLoader();
-            loader.load('3d_model/Perseverance_Rover_Rigged.glb', (gltf) => {
+            loader.load('./3d_model/Perseverance_Rover_Rigged.glb', (gltf) => {
                 document.getElementById('instructions').style.display = 'none';
                 setupRover(gltf);
                 setupAccordion();
