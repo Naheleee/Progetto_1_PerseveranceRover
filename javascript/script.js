@@ -38,7 +38,7 @@
             setTimeout(() => {
                 document.body.classList.add('fade-out');
                 setTimeout(() => {
-                    window.location.href = '/html/rover.html';
+                    window.location.href = 'html/rover.html';
                 }, 0);
             }, 1800);
         }
