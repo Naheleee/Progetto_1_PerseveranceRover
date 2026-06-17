@@ -1,0 +1,1398 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NASA - Perseverance Rover</title>
+    <link rel="icon" type="image/x-icon" href="../assets/nasa_logo2.png">
+    <link rel="stylesheet" href="../css/style_rover.css">
+</head>
+
+<body>
+    <div id="fade-overlay"></div>
+    <div id="hotspot-container"></div>
+    <svg id="connector-layer">
+        <polyline id="info-line" points="0,0 0,0 0,0" />
+        <line id="extra-line" x1="0" y1="0" x2="0" y2="0" />
+        <circle id="anchor-point" cx="0" cy="0" r="5" fill="none" style="opacity: 0; transition: opacity 0.3s;" />
+    </svg>
+    <div id="right-labels">
+        <div class="yellow-label">
+            <h1 id="detail-title" class="label-title"></h1>
+            <div class="label-divider"></div>
+            <div id="detail-description" class="label-description"></div>
+        </div>
+        <div id="text-database" style="display: none;">
+            <div id="info-0" data-title="The Rover’s Body">
+                <p>The Perseverance Rover’s body is called the warm electronics box, or
+                    “WEB” for short. Like a car body, the Rover body is a strong, outer layer that protects the Rover’s
+                    computer and electronics.</p>
+                <p>
+                    <hr>
+                    <strong>Structure:</strong> The Rover’s body consists of a high-strength <strong>chassis
+                        frame</strong> (bottom and sides) and a specialized <strong>equipment deck</strong> (the
+                    “back”).
+                </p>
+                <p>
+                    <strong>The Belly Pan:</strong> The front section of the underbelly (approx. 1.5 feet) served as a
+                    protective cover during landing.
+                </p>
+                <p>
+                    <strong>Interior Workspace:</strong> Shortly after landing, the belly pan was
+                    <strong>dropped</strong> to expose the Sampling and Caching system to the Martian atmosphere,
+                    creating the necessary workspace for sample handling.
+                </p>
+                <p>
+                    <strong>Main Job:</strong> Acting as a “Warm Electronics Box” (WEB), it protects the computer,
+                    electronics, and instruments from the extreme thermal swings of Mars.
+                </p>
+            </div>
+            <div id="info-1" data-title="How the Rover thinks">
+                <p>The Rover’s brains, its computer, are in its boxy body. The computer module, the Rover Compute
+                    Element (RCE), has two identical RCEs so there is always a spare “brain”. The computer memory
+                    tolerates extreme radiation in space and on Mars. The RCE interfaces with the Rover’s engineering
+                    functions over two networks that follow an aerospace industry standard for the high-reliability
+                    airline and spacecraft requirements. The RCEs directly interface with the Rover instruments for
+                    command and science data exchange.</p>
+                <hr>
+                <p>
+                    <strong>Processor:</strong> Radiation-hardened BAE RAD750 (PowerPC 750). Operates at <strong>200
+                        MHz</strong>, 10x faster than Spirit/Opportunity.
+                </p>
+                <p>
+                    <strong>Redundancy:</strong> Two identical Rover Compute Elements (RCEs). One is active while the
+                    other acts as a <strong>backup</strong>.
+                </p>
+                <p>
+                    <strong>Memory:</strong><br>
+                    • 2 GB Flash memory<br>
+                    • 256 MB DRAM<br>
+                    • 256 KB EEPROM
+                </p>
+                <p>
+                    <strong>“Nerves” (IMU):</strong> An Inertial Measurement Unit provides <strong>3-axis position
+                        data</strong>, allowing precise movements and monitoring the Rover’s tilt for safe navigation.
+                </p>
+                <p>
+                    <strong>Health Monitoring:</strong> The RCE constantly checks temperature and power levels, manages
+                    thermal controls, and schedules communication sessions with Earth and orbiters.
+                </p>
+            </div>
+            <div id="info-2" data-title="Cameras and Microphones">
+                <p>Robots have replicated much of the human sensory experience on Mars. Cameras have given us sight,
+                    robotic hands, arms and feet have supplied touch, and chemical and mineral sensors have let us taste
+                    and smell on Mars.</p>
+                <hr>
+                <p><strong>⬤ Total cameras: 23</strong></p>
+                <p><strong>Science cameras: 7</strong><br>
+                    <strong>Entry, descent and landing cameras: 7</strong></p>
+                <p>
+                    <strong>Main job:</strong> Identifies mineral compositions and seeks organic compounds. It uses a
+                    <strong>laser</strong> to zap and study rocks from up to 7 meters away.
+                </p>
+                <p>
+                    <strong>The Microphones:</strong> Provides a new “sense” to probe rocks. It captures the
+                    <strong>staccato pop</strong> of laser impacts, wind, and Rover mechanical sounds.
+                </p>
+                <p>
+                    <strong>Location:</strong> 15 mm boom on the Rover’s mast head.<br>
+                    <strong>Weight:</strong> Ultralight (30 grams).<br>
+                    <strong>Listening:</strong> Active during laser zaps (milliseconds) or up to 3.5 minutes for
+                    environmental sounds.
+                </p>
+            </div>
+            <div id="info-3" data-title="Sample Collection &#10; & Storage">
+                <p>The Perseverance Rover is the first mission to demonstrate gathering samples from Martian rocks and
+                    soil using its drill. The Rover stores the sample cores in tubes on the Martian surface. This sample
+                    caching process could potentially pave the way for future missions to collect the samples and return
+                    them to Earth for intensive laboratory analysis.</p>
+                <hr>
+                <p>
+                    <strong>Step 1: Collection</strong><br>
+                    Samples are drilled, placed in titanium tubes, and documented with <strong>precise
+                        coordinates</strong> and local landmarks for future retrieval.
+                </p>
+                <p>
+                    <strong>Step 2: Sealing & Inspection</strong><br>
+                    A small <strong>internal robotic arm</strong> moves the tubes to the Rover’s belly. Here, they are
+                    inspected and <strong>hermetically sealed</strong> to prevent any Earthly contamination.
+                </p>
+                <p>
+                    <strong>Step 3: Depot Deposition</strong><br>
+                    The Rover carries the tubes until it reaches a designated <strong>“Cache Depot”</strong>. The
+                    samples are then left on the surface, ready to be picked up by a future mission to Earth.
+                </p>
+                <p>
+                    <strong>Hardware:</strong> Includes 43 sample tubes, a bit carousel, and an ultra-clean assembly
+                    line inside the Rover body.
+                </p>
+            </div>
+            <div id="info-4" data-title="Antennas">
+
+                <p>The Perseverance Rover has three antennas that serve as its “voice” and its “ears”. They are located
+                    on the Rover equipment deck. Having multiple antennas provides operational flexibility and back-up
+                    options in case they are needed.</p>
+                <hr>
+                <p>
+                    <strong>1) Ultra-High Frequency Antenna</strong><br><br>
+                    <strong>Main job:</strong> Transmitting data to Earth through Mars orbiters.<br>
+                    <strong>Frequency:</strong> UHF band (approx. 400 MHz).<br>
+                    <strong>Speed:</strong> Up to 2 megabits per second on the Rover-to-orbiter relay link.
+                </p>
+
+                <p>
+                    <strong>2) X-band High-Gain Antenna</strong><br><br>
+                    <strong>Main job:</strong> Direct data transmission to and from Earth.<br>
+                    <strong>Location:</strong> Mounted mid-aft portside of the Rover deck.<br>
+                    <strong>Size:</strong> Hexagonal, 1 foot (0.3 meters) in diameter.<br>
+                    <strong>Provided by:</strong> Spain (CDTI/CAB).
+                </p>
+
+                <p>
+                    <strong>3) X-band Low-Gain Antenna</strong><br><br>
+                    <strong>Main job:</strong> Receiving signals and data from Earth.<br>
+                    <strong>Frequency:</strong> X-band (7 to 8 GHz).<br>
+                    <strong>Performance:</strong> Reliable low-speed reception (approx. 10-30 bits per second) via the
+                    Deep Space Network.
+                </p>
+            </div>
+            <div id="info-5" data-title="Navigating the &#10; Red Planet">
+                <p>Engineers redesigned the Mars 2020 Perseverance Rover’s wheels to be more robust, due to wear and
+                    tear the Curiosity Rover wheels endured while driving over sharp, pointy rocks. Perseverance’s
+                    wheels are narrower, with a bigger diameter and thicker aluminum. Perseverance has six wheels, each
+                    with its own motor. The two front and two rear wheels also have individual steering motors, to turn
+                    in place a full 360 degrees. The four-wheel steering also lets the Rover swerve and curve, making
+                    arcing turns.</p>
+                <hr>
+                <p>
+                    <strong>Materials:</strong> Machined <strong>Aluminum</strong> with 48 traction cleats (grousers).
+                    The interior features curved <strong>Titanium spokes</strong> that act as springy, shock-absorbing
+                    support.
+                </p>
+                <p>
+                    <strong>Dimensions:</strong> 20.7 inches (52.5 cm) in diameter.
+                </p>
+                <p>
+                    <strong>Efficiency:</strong> One full rotation moves the Rover exactly <strong>65 inches (1.65
+                        meters)</strong> forward.
+                </p>
+                <p>
+                    <strong>Terrain Handling:</strong> Designed to climb over rocks up to 40 cm high while maintaining
+                    6-wheel contact thanks to the <strong>Rocker-Bogie</strong> suspension.
+                </p>
+                <p>
+                    <strong>Max speed:</strong> 0,12 Km/h
+                </p>
+            </div>
+            <div id="info-6" data-title="Remote Sensing Mast">
+                <p>A mast for the cameras to give the Rover a human-scale view, providing an elevated vantage point that
+                    enhances depth perception and allows for panoramic environmental assessment, mimicking the
+                    perspective of a human observer.</p>
+                <hr>
+                <p>
+                    <strong>Main Job:</strong> Acts as the Rover’s “head”, providing a high-altitude vantage point for
+                    cameras and laser instruments to study the Martian landscape.
+                </p>
+                <p>
+                    <strong>Height:</strong> The mast sits about <strong>7 feet (2.1 meters)</strong> above the ground,
+                    giving the cameras a human-like perspective.
+                </p>
+                <p>
+                    <strong>Core Instruments:</strong><br>
+                    • <strong>Mastcam-Z:</strong> High-definition zoom cameras for 3D panoramic color images.<br>
+                    • <strong>SuperCam:</strong> Uses a laser to “zap” rocks and identify their chemical makeup from a
+                    distance.<br>
+                    • <strong>MEDA:</strong> Sensors that measure wind speed, temperature, and humidity.
+                </p>
+                <p>
+                    <strong>Movement:</strong> The mast can rotate <strong>360 degrees</strong> and tilt up or down,
+                    allowing the Rover to scan the entire horizon without moving its wheels.
+                </p>
+            </div>
+            <div id="info-7" data-title="Robotic Arm">
+                <p>The 7-foot-long (2.1 meters) robotic arm can move a lot like your arm. Its shoulder, elbow. and wrist
+                    “joints” offer maximum flexibility. Using the arm, the Rover works as a human geologist: holding and
+                    using science tools with its “hand”, or turret. The “hand tools” extract cores from rocks, take
+                    microscopic images. and analyze the elemental and mineral composition of Martian rocks and soil.</p>
+                <hr>
+                <p>
+                    <strong>Main Function:</strong> A 7-foot (2.1 meters) robotic arm designed for Mars surface
+                    investigation and high-precision sample collection.
+                </p>
+                <p>
+                    <strong>Degrees of Freedom (5):</strong> Powered by tiny rotary actuator motors, the arm moves via:
+                    <em>Shoulder Azimuth, Shoulder Elevation, Elbow, Wrist, and Turret joints.</em>
+                </p>
+                <p>
+                    <strong>The “Hand” (Turret):</strong> A 45kg suite of scientific tools including:
+                    <br>• <strong>SHERLOC & WATSON:</strong> UV Raman/Fluorescence and imaging.
+                    <br>• <strong>PIXL:</strong> X-ray fluorescence spectrometer.
+                    <br>• <strong>GDRT:</strong> Gaseous Dust Removal Tool to clear surfaces.
+                </p>
+                <p>
+                    <strong>The Drill:</strong> A rotary percussive system that extracts rock cores using
+                    interchangeable bits (coring, regolith, and abrader).
+                    <br><strong>Hole Diameter:</strong> 1 inch (27 mm).
+                </p>
+            </div>
+            <div id="info-8" data-title="Energy Core">
+                <p>For electrical power, Perseverance carries a radioisotope power system (RPS). This system produces a
+                    dependable electricity flow using the heat of plutonium-238’s radioactive decay as its “fuel”.
+                    The power source, called a Multi-Mission Radioisotope Thermoelectric Generator (MMRTG), has a
+                    14-year operational lifetime. The MMRTG converts heat from the natural radioactive decay of
+                    plutonium into electricity to charge the Rover’s two primary batteries and keep the Rover’s tools
+                    and systems at their correct operating temperatures.</p>
+                <hr>
+                <p>
+                    <strong>Main Job:</strong> Provides a steady flow of electricity to the Rover’s systems and keeps
+                    its “heart” warm during the freezing Martian nights.
+                </p>
+                <p>
+                    <strong>How it works:</strong> It uses 4.8 kg of <strong>Plutonium Dioxide</strong>. The natural
+                    decay of this radioisotope creates heat, which is converted into <strong>110 Watts</strong> of
+                    electrical power.
+                </p>
+                <p>
+                    <strong>Energy Storage:</strong> Two <strong>Lithium-ion batteries</strong> handle peak demands when
+                    activities (like drilling or driving) exceed the steady output of the generator.
+                </p>
+                <p>
+                    <strong>Reliability & Safety:</strong>
+                    <br>• <strong>Lifespan:</strong> Designed for 14+ years of operation.
+                    <br>• <strong>Armor:</strong> The fuel is ceramic (shatter-resistant) and encased in multiple layers
+                    of missile-grade heat shielding.
+                </p>
+                <p>
+                    <strong>Dimensions:</strong> 64 cm diameter, 66 cm long.<br>
+                    <strong>Weight:</strong> 45 kg.
+                </p>
+            </div>
+            <div id="curiosity-0" data-title="Family Portrait">
+                <p>This small but significant graphic, located on the Rover’s deck, depicts the silhouettes of the
+                    generations of Rovers that paved the way for the Mars 2020 mission. The portrait includes the tiny
+                    Sojourner (the first Rover to land in 1997), the twins Spirit and Opportunity, the car-sized
+                    Curiosity, and finally Perseverance itself, accompanied by the history-making Mars Helicopter,
+                    Ingenuity.
+                    <br>
+                    This “family” illustration serves as a reminder of the shared heritage of these robotic explorers.
+                    It symbolizes how each mission is built upon the technological breakthroughs and scientific
+                    discoveries of its predecessors, representing a continuous human presence and a legacy of
+                    persistence on the Red Planet.</p>
+                <img src="../assets/familyportrait1.png" alt="Family Portrait"
+                    style="width: 90%; margin-top: 15px; justify-content: center;">
+            </div>
+            <div id="curiosity-1" data-title="Healthcare Tribute">
+                <p>Because the Perseverance Rover was built and launched during the height of the COVID-19 pandemic, the
+                    team wanted to honor the perseverance of healthcare workers worldwide.
+                    <br>
+                    An aluminum plate on the Rover’s left side depicts the Rod of Asclepius, the ancient Greek symbol
+                    for
+                    healing and medicine, supporting the Earth. This serves as a lasting memorial to the challenges of
+                    2020 and a tribute to those who risked their lives to help others during the global crisis.</p>
+            </div>
+            <div id="curiosity-2" data-title="Ultimate Geocache">
+                <p>The SHERLOC instrument (Scanning Habitable Environments with Raman & Luminescence for Organics &
+                    Chemicals) carries a special calibration target that includes a slice of a Martian meteorite. This
+                    piece of rock was once part of Mars, fell to Earth, and has now been returned to its home planet.
+                    <br>
+                    Additionally, the target features a “geocache” coin made of spacesuit helmet-visor material. It is
+                    inscribed with the address of the fictional detective Sherlock Holmes (221B Baker Street), allowing
+                    geocaching enthusiasts on Earth to virtually “find” it through the Rover’s public image gallery.</p>
+            </div>
+            <div id="curiosity-3" data-title="11 Million Names">
+                <p>Perseverance carries three tiny microchips stenciled with the names of 10,932,295 people who
+                    participated in NASA’s “Send Your Name to Mars” campaign. These chips are mounted on a small
+                    commemorative plate on the Rover’s aft crossbeam.
+                    <br>
+                    The plate features a graphic of Earth and Mars linked by the Sun. Look closely at the Sun’s rays,
+                    and you will find the phrase “Explore as One” hidden in Morse code, symbolizing the global human
+                    effort behind the mission.</p>
+            </div>
+            <div id="curiosity-4" data-title="Calibration Target">
+                <p>The Mastcam-Z instrument features a primary calibration target that also serves as a functional
+                    sundial. It is decorated with color and grayscale swatches to help scientists adjust the camera
+                    settings based on Martian lighting conditions.
+                    <br>
+                    The sundial is inscribed with the motto “Two Worlds, One Beginning” and features small drawings of
+                    early Earth life forms, such as cyanobacteria, a fern, and a dinosaur. It also includes a message of
+                    goodwill in multiple languages for future explorers: “Are we alone? We came here to look for signs
+                    of life... To those who follow, we wish a safe journey and the joy of discovery.</p>
+                <img src="../assets/calibration.png" alt="Calibration Target"
+                    style="width: 80%; margin-top: 15px; justify-content: center;">
+            </div>
+            <div id="curiosity-5" data-title="Hidden Morse Code">
+                <p>When the supersonic parachute deployed over the Martian surface, eagle-eyed viewers noticed an
+                    unusual red-and-white pattern in its concentric rings. This was not a random design; it was a binary
+                    code (representing 7-bit ASCII) that spelled out the phrase “Dare Mighty Things.” This motto is a
+                    famous quote from President Theodore Roosevelt and has long been the unofficial mantra of NASA’s Jet
+                    Propulsion Laboratory (JPL). Additionally, the outer ring of the parachute contained GPS
+                    coordinates: 34°11'58" N 118°10'31" W, which point directly to the main entrance of the JPL
+                    headquarters in Pasadena, California.</p>
+                <img src="../assets/morse_code.png" alt="Hidden Morse Code" style="width: 90%; margin-top: 15px;">
+            </div>
+            <div id="curiosity-6" data-title="Ingenuity Helicopter">
+                <p>Strapped to the Rover’s belly for the journey to Mars was a technology demonstration, the Mars
+                    Helicopter, Ingenuity, which completed 72 historic flights. In a feat that’s been called a
+                    “Wright Brothers moment” Ingenuity became the first aircraft to achieve powered, controlled
+                    flight on another planet.</p>
+                <img src="../assets/Helicopter-ingenuity2.png" alt="Ingenuity Helicopter"
+                    style="width: 95%; margin-top: 15px;">
+            </div>
+        </div>
+    </div>
+    <div id="side-panel" class="closed">
+        <button id="toggle-panel-home" onclick="window.location.href='../../index.html';">🏠︎</button>
+        <button id="toggle-panel">&#8594;</button>
+        <div class="panel-content">
+            <h2 style="margin-top: 0">Components</h2>
+            <div id="components-container"></div>
+            <h2 style="margin-top: 20px;">Curiosities</h2>
+            <div id="curiosities-container"></div>
+        </div>
+    </div>
+    <div id="instructions">
+        <p></p>
+    </div>
+
+    <div id="custom-arm-controls">
+        <div class="arm-slider-group">
+            <label>Joint 1</label>
+            <input type="range" id="input-armAngle" step="0.1">
+        </div>
+        <div class="arm-slider-group">
+            <label>Joint 2</label>
+            <input type="range" id="input-arm2Angle" step="0.1">
+        </div>
+        <div class="arm-slider-group">
+            <label>Joint 3</label>
+            <input type="range" id="input-arm3Angle" step="0.1">
+        </div>
+        <div class="arm-slider-group">
+            <label>Joint 4</label>
+            <input type="range" id="input-arm4Angle" step="0.1">
+        </div>
+        <div class="arm-slider-group">
+            <label>Turret</label>
+            <input type="range" id="input-turretAngle" step="0.1">
+        </div>
+        <button id="reset-arm-btn">RESET</button>
+    </div>
+
+
+
+
+
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+                "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/",
+                "lil-gui": "https://cdn.jsdelivr.net/npm/lil-gui@0.19/+esm"
+            }
+        }
+    </script>
+    <script type="module">
+        import * as THREE from 'three';
+        import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
+        import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+        import { GUI } from 'lil-gui';
+        let mastTime = 0; 
+        let isMastSectionActive = false;
+        const MAST_CYCLE_DURATION = 30;
+        let arm1Time = 0; 
+        let isArm1SectionActive = false;
+        const ARM1_CYCLE_DURATION = 30;
+        const settings = {
+            rotationSpeed: 0.05,
+            isRotating: false,
+            steeringAngle: 0, 
+            exposure: 3,
+            lightMode: 'Mars',
+            ambientIntensity: 0,
+            backgroundColor: '#ffffff',
+            cartoonMode: true,
+            matteIntensity: 0.2,
+            showGrid: false,
+            showShadows: false,
+            // Parametri Braccio 1
+            armAngle: 0,
+            armLimitMin: -50,
+            armLimitMax: 50,
+            arm2Angle: 0,
+            arm2LimitMin: 0,
+            arm2LimitMax: 45,
+            arm3Angle: 0,
+            arm3LimitMin: -90,
+            arm3LimitMax: 0,
+            arm4Angle: 0,
+            arm4LimitMin: -90,
+            arm4LimitMax: 90,
+            turretAngle: 0,
+            turretLimitMin: -180,
+            turretLimitMax: 180,
+            // Parametri Braccio 2
+            b2BottomX: 0,
+            b2BottomMin: -45,
+            b2BottomMax: 45,
+            b2TopY: 0,
+            b2TopMin: -180,
+            b2TopMax: 180,
+            b2HeadX: 0,
+            b2HeadMin: -90,
+            b2HeadMax: 90,
+            // Direzione Custom
+            b2AxisX: 1,
+            b2AxisY: 0,
+            b2AxisZ: 1.5,
+            resetPose: function() {
+                settings.armAngle = 0; settings.arm2Angle = 0; settings.arm3Angle = 0;
+                settings.arm4Angle = 0; settings.turretAngle = 0;
+                settings.b2BottomX = 0; settings.b2TopY = 0; settings.b2HeadX = 0;
+                settings.steeringAngle = 0; 
+                gui.controllersRecursive().forEach(controller => controller.updateDisplay());
+                
+                const sliderIds = ['input-armAngle', 'input-arm2Angle', 'input-arm3Angle', 'input-arm4Angle', 'input-turretAngle'];
+                sliderIds.forEach(id => {
+                    const sliderEl = document.getElementById(id);
+                    if (sliderEl) {
+                        sliderEl.value = 0;
+                    }
+                });
+            }
+        };
+        const lineSettings = {
+            anchorColor: 'black',
+            anchorRadius: 5,
+            anchorVisible: true,
+            lineWidth: 3,
+            elbowOffset: 600,
+            endOffset: 450,
+            labelTop: 100,
+            labelRightMargin: 420,
+            labelWidth: 400
+        };
+
+
+function populateAccordions() {
+    const compContainer = document.getElementById('components-container');
+    for (let i = 0; i <= 8; i++) {
+        const info = document.getElementById(`info-${i}`);
+        if (info) createAccordionItem(compContainer, info.dataset.title, info.innerHTML, i, 'component');
+    }
+
+    const curioContainer = document.getElementById('curiosities-container');
+    for (let i = 0; i <= 6; i++) { // <--- Qui deve esserci 6 per avere 7 bottoni (0,1,2,3,4,5,6)
+        const curio = document.getElementById(`curiosity-${i}`);
+        if (curio) createAccordionItem(curioContainer, curio.dataset.title, curio.innerHTML, i, 'curiosity');
+    }
+}
+
+function createAccordionItem(container, title, content, index, type) {
+    const btn = document.createElement('button');
+    btn.className = 'accordion-btn';
+    btn.innerHTML = title;
+    container.appendChild(btn);
+
+    btn.addEventListener('click', () => {
+        const isActive = btn.classList.contains('active-title');
+        const rightLabels = document.getElementById('right-labels');
+        
+        const armControls = document.getElementById('custom-arm-controls');
+
+        document.querySelectorAll('.accordion-btn').forEach(el => el.classList.remove('active-title'));
+
+        if (isActive) {
+            rightLabels.style.display = 'none';
+            activeTrackedObject = null;
+            targetCameraPos.copy(defaultCameraPos);
+            centerOffset.copy(defaultTargetPos);
+            isTransitioning = true;
+
+            isWheelsSectionActive = false;
+            if (typeof isMastSectionActive !== 'undefined') isMastSectionActive = false;
+            if (typeof isArm1SectionActive !== 'undefined') isArm1SectionActive = false;
+            
+            if (armControls) {
+                armControls.classList.remove('visible');
+                armControls.classList.add('hidden');
+            }
+
+        } else {
+            btn.classList.add('active-title');
+            document.getElementById('detail-title').innerText = title;
+            document.getElementById('detail-description').innerHTML = content;
+            rightLabels.style.display = 'block';
+            document.getElementById('info-line').style.opacity = '0';
+            document.getElementById('extra-line').style.opacity = '0';
+            document.getElementById('anchor-point').style.opacity = '0';
+            activeTrackedObject = null;
+
+            let view = null;
+
+            if (type === 'component') {
+                view = viewpoints[index];
+                
+                isWheelsSectionActive = (index === 6);
+                
+                if (index === 8) {
+                    isArm1SectionActive = true;
+                    if (typeof isMastSectionActive !== 'undefined') isMastSectionActive = true;
+                    if (armControls) {
+                        armControls.classList.remove('hidden');
+                        armControls.classList.add('visible');
+                    }
+                } else {
+                    isArm1SectionActive = false;
+                    if (typeof isMastSectionActive !== 'undefined') isMastSectionActive = false;
+                    if (armControls) {
+                        armControls.classList.remove('visible');
+                        armControls.classList.add('hidden');
+                    }
+                }
+
+            } else if (type === 'curiosity') {
+                view = curiosityViewpoints[index];
+                isWheelsSectionActive = false;
+                isArm1SectionActive = false;
+                if (typeof isMastSectionActive !== 'undefined') isMastSectionActive = false;
+                if (armControls) {
+                    armControls.classList.remove('visible');
+                    armControls.classList.add('hidden');
+                }
+            }
+
+            if (view) {
+                targetCameraPos.set(view.pos.x, view.pos.y, view.pos.z);
+                centerOffset.set(view.target.x, view.target.y, view.target.z);
+                isTransitioning = true;
+            }
+        }
+    });
+}
+populateAccordions();
+
+        let activeTrackedObject = null;
+        let lineTargetX = window.innerWidth - 400; 
+        const infoLine = document.getElementById('info-line');
+        const extraLine = document.getElementById('extra-line');
+        const rightLabels = document.getElementById('right-labels');
+        const anchorPoint = document.getElementById('anchor-point');
+        let defaultCameraPos = new THREE.Vector3();
+        let defaultTargetPos = new THREE.Vector3(0, 1, 0);
+        const viewpoints = [
+            { pos: {x:  0,   y: 7,   z:  1},    target: {x: 0, y: 1, z: 0},             part: 'body' },
+            { pos: {x:  6,   y: 3,   z:  0},    target: {x: 0, y: 1, z: 0},             part: 'suspension1505' },
+            { pos: {x: -2.66, y: 1.50, z: 4.10},target: {x: 0.14, y: 1.00, z: 0.10},    part: '' },
+            { pos: {x: -1.24, y: 1.47, z: 4.12},target: {x: 0.28, y: 1.00, z: -0.10},   part: 'lab' },
+            { pos: {x: 1.54, y: 2.47, z: 0.42}, target: {x: 0.05, y: 1.53, z: -1.08},   part: '' },
+            { pos: {x: 2.56, y: 1.81, z: 1.73}, target: {x: 0.48, y: 0.39, z: -0.56},   part: 'S2' },
+            { pos: {x: -1.40, y: 1.86, z: 1.67},target: {x: -0.27, y: 1.86, z: -0.2},   part: 'head' },
+            { pos: {x: -0.2, y: 1.5, z:  5.5},  target: {x: 0, y: 1, z: 0},             part: 'turret_obj' },
+            { pos: {x:  3.5, y: 2.7, z: -3.5},  target: {x: 0, y: 1, z: -0.5},          part: 'rtg' },
+        ];
+
+        const curiosityViewpoints = [
+            { pos: {x: -0.35, y: 1.56, z: -0.1006}, target: {x: -0.33, y: 0.99, z: -0.10} },    // curiosità (Family Portrait)
+            { pos: {x: 0.84, y: 1.00, z: -0.85},    target: {x: 0.74, y: 1.00, z: -0.94} },     // curiosità (Tributo Healthcare)
+            { pos: {x: -0.31, y: 0.98, z: 1.22},    target: {x: -0.57, y: 0.97, z: 0.75} },     // curiosità (Geocache)
+            { pos: {x: 0.00, y: 1.68, z: -0.87},    target: {x: 0.00, y: 1.58, z: -1.22} },     // curiosità (11 Million Names)
+            { pos: {x: -0.46, y: 1.61, z: -0.62},   target: {x: -0.39, y: 1.12, z: -0.76} },    // curiosità (Calibration target)
+            { pos: {x:  0,   y: 7,   z:  1},        target: {x: 0, y: 1, z: 0} },               // curiosità (morse code)
+            { pos: {x:  0,   y: 7,   z:  1},        target: {x: 0, y: 1, z: 0} }                // curiosità (ingenuity helicopter)
+        ];
+
+
+        let targetCameraPos = new THREE.Vector3();
+        let centerOffset = new THREE.Vector3(0, 1, 0);
+        let isTransitioning = false;
+        let currentRotationSpeed = 0; 
+                // Configurazione dei 23 punti per Eyes and Ears
+        const eyeEarHotspots = [
+            { pos: new THREE.Vector3(-0.45, 0.85, -1.45),   label: "Rear Hazcam 1" },
+            { pos: new THREE.Vector3(0.45, 0.85, -1.45),    label: "Rear Hazcam 2" },
+            { pos: new THREE.Vector3(-0.76, 2.08, 0.52),    label: "Navcam 1" },
+            { pos: new THREE.Vector3(-0.67, 2.08, 0.52),    label: "Mastcam-Z 1" },
+            { pos: new THREE.Vector3(-0.44, 2.24, 0.52),    label: "SuperCam (Remote Micro-Imager)" },
+            { pos: new THREE.Vector3(-0.44, 2.08, 0.52),    label: "Mastcam-Z 2" },
+            { pos: new THREE.Vector3(-0.34, 2.08, 0.52),    label: "Navcam 2" },
+            { pos: new THREE.Vector3(-0.26, 0.83, 0.7),     label: "Front Hazcam 1" },
+            { pos: new THREE.Vector3(-0.17, 0.83, 0.72),    label: "Front Hazcam 2" },
+            { pos: new THREE.Vector3(0, 0.83, 0.72),        label: "Front Hazcam 3" },
+            { pos: new THREE.Vector3(0.1, 0.83, 0.7),       label: "Front Hazcam 4" },
+            { pos: new THREE.Vector3(0.59, 1.99, 1.8),      label: "SHERLOC (WATSON)" },
+            { pos: new THREE.Vector3(-0.05, 2.01, 1.67),    label: "PIXL (Micro-Context Camera)" },
+        ];
+
+const communicationHotspots = [
+    { pos: new THREE.Vector3(-0.51, 1.92, -1.4), label: "1) UHF Antenna" },
+    { pos: new THREE.Vector3(0.47, 1.69, -1.27), label: "3) Lander Low-Gain Antenna" },
+    { pos: new THREE.Vector3(0.4, 1.5, -0.6), label: "2) High-Gain Antenna" }
+];
+let commHotspotElements = [];
+        const tooltip = document.createElement('div');
+        tooltip.className = 'hotspot-tooltip';
+        document.body.appendChild(tooltip);
+        const hotspotElements = [];
+        const hotspotContainer = document.getElementById('hotspot-container');
+        eyeEarHotspots.forEach((data, index) => {
+            const el = document.createElement('div');
+            el.className = 'hotspot';
+            el.dataset.label = data.label || `Sensor ${index + 1}`;
+            hotspotContainer.appendChild(el);
+            el.addEventListener('mouseenter', () => {
+                tooltip.innerText = el.dataset.label;
+                tooltip.style.display = 'block';
+            });
+            el.addEventListener('mouseleave', () => {
+                tooltip.style.display = 'none';
+            });
+            hotspotElements.push({ 
+                element: el, 
+                worldPos: data.pos 
+            });
+        });
+                const scene = new THREE.Scene();
+                const textureLoader = new THREE.TextureLoader();
+        textureLoader.load('', (tex) => {
+            tex.mapping = THREE.EquirectangularReflectionMapping;
+            tex.colorSpace = THREE.SRGBColorSpace;
+            scene.background = new THREE.Color(settings.backgroundColor);
+            scene.environment = tex;
+        }, undefined, () => {
+            scene.background = new THREE.Color(settings.backgroundColor);
+        });
+        scene.fog = new THREE.Fog(0xffffff, 1, 50);
+        const camera = new THREE.PerspectiveCamera(50, window.innerWidth / window.innerHeight, 0.1, 1000);
+        camera.position.set(15, 10, 15); 
+        const renderer = new THREE.WebGLRenderer({ antialias: true });
+        renderer.setSize(window.innerWidth, window.innerHeight);
+        renderer.setPixelRatio(window.devicePixelRatio);
+        renderer.shadowMap.enabled = true;
+        renderer.toneMapping = THREE.ACESFilmicToneMapping; 
+        renderer.toneMappingExposure = settings.exposure;
+        document.body.appendChild(renderer.domElement);
+        const lights = new THREE.Group();
+        scene.add(lights);
+        const ambientLight = new THREE.AmbientLight(0xffffff, settings.ambientIntensity);
+        const hemiLight = new THREE.HemisphereLight(0xffffff, 0x444444, 1.5);
+        const sunLight = new THREE.DirectionalLight(0xffffff, 3);
+        sunLight.position.set(10, 20, 10);
+        sunLight.castShadow = true;
+        function updateLighting() {
+            lights.clear();
+            if (settings.lightMode === 'Mars') {
+                lights.add(new THREE.AmbientLight(0xffccaa, settings.ambientIntensity));
+                lights.add(new THREE.HemisphereLight(0xffffff, 0x331100, 1));
+                const d = new THREE.DirectionalLight(0xffffff, 2);
+                d.position.set(10, 20, 10);
+                d.castShadow = settings.showShadows;
+                lights.add(d);
+            } else if (settings.lightMode === 'Studio') {
+                ambientLight.intensity = settings.ambientIntensity;
+                lights.add(ambientLight);
+                lights.add(hemiLight);
+                sunLight.castShadow = settings.showShadows;
+                lights.add(sunLight);
+            } else {
+                lights.add(new THREE.AmbientLight(0xffffff, settings.ambientIntensity * 2));
+            }
+        }
+        updateLighting();
+        function updateMaterials() {
+            if (!roverGroup) return;
+            roverGroup.traverse((node) => {
+                if (node.isMesh && node.material) {
+                    if (settings.cartoonMode) {
+                        node.material.metalness = THREE.MathUtils.lerp(node.material.userData.originalMetalness || 0, 0, settings.matteIntensity);
+                        node.material.roughness = THREE.MathUtils.lerp(node.material.userData.originalRoughness || 1, 1, settings.matteIntensity);
+                    } else {
+                        node.material.metalness = node.material.userData.originalMetalness !== undefined ? node.material.userData.originalMetalness : 0.5;
+                        node.material.roughness = node.material.userData.originalRoughness !== undefined ? node.material.userData.originalRoughness : 0.5;
+                    }
+                    node.material.needsUpdate = true;
+                }
+            });
+        }
+        const grid = new THREE.GridHelper(30, 30, 0xff4400, 0x333333);
+        grid.material.transparent = true; grid.material.opacity = 0.9; grid.position.y = -0.01;
+        grid.visible = settings.showGrid; 
+        scene.add(grid);
+        const shadowPlane = new THREE.Mesh(new THREE.PlaneGeometry(200, 200), new THREE.ShadowMaterial({ opacity: 0.4 }));
+        shadowPlane.rotation.x = -Math.PI / 2; shadowPlane.position.y = -0.02; shadowPlane.receiveShadow = true;
+        shadowPlane.visible = settings.showShadows;
+        scene.add(shadowPlane);
+        const controls = new OrbitControls(camera, renderer.domElement);
+        controls.enableDamping = true;
+        controls.addEventListener('change', () => {
+        const p = camera.position;
+        const t = controls.target;
+        console.log(`pos: {x: ${p.x.toFixed(2)}, y: ${p.y.toFixed(2)}, z: ${p.z.toFixed(2)}}, target: {x: ${t.x.toFixed(2)}, y: ${t.y.toFixed(2)}, z: ${t.z.toFixed(2)}}`);
+        });
+        controls.addEventListener('start', () => { isTransitioning = false; });
+        let roverParts = { 
+            wheels: [], 
+            wheelMap: { R1: null, S1: null, R3: null, S3: null },
+            steering: { RF: null, SF: null, RB: null, SB: null },
+            steeringInit: { RF: 0, SF: 0, RB: 0, SB: 0 },
+            arm003: null, arm003InitialY: 0, arm002: null, arm002InitialZ: 0,
+            armMain: null, armMainInitialZ: 0, arm004: null, arm004InitialZ: 0, turret: null, turretInitialY: 0,
+            bottom003: null, b2BottomInitX: 0, top: null, b2TopInitY: 0, head: null, b2HeadInitX: 0,
+            bottomPivot: new THREE.Object3D(),
+            lab: null,
+            rtg: null,
+        };
+        let roverGroup = null;
+        const targetWheelNames = ['R1', 'R2', 'R3', 'S1', 'S2', 'S3'];
+        const sidePanel = document.getElementById('side-panel');
+        const toggleBtn = document.getElementById('toggle-panel');
+        const accordionContainer = document.getElementById('components-container');
+        toggleBtn.addEventListener('click', () => {
+        sidePanel.classList.add('user-interaction');
+        sidePanel.classList.toggle('closed');
+        if (sidePanel.classList.contains('closed')) {
+        toggleBtn.innerHTML = '&#8594;'; // Usa innerHTML per interpretare il codice HTML
+        resetAccordionUI();
+        } else {
+        toggleBtn.innerHTML = '&#8592;';
+        }
+        if (settings && settings.resetPose) {
+        settings.resetPose();
+        }
+        });
+        const titleNames = [
+            "1)  Body",
+            "2)  Brain",
+            "3)  Eyes and ears",
+            "4)  Sample handling",
+            "5)  Comunications",
+            "6)  Wheels and legs",
+            "7)  Neck and head",
+            "8)  Arm and hand",
+            "9)  Power source",
+        ];
+
+
+        let armSliderTimeout;
+
+        function setupAccordion() {
+    accordionContainer.innerHTML = ''; 
+    titleNames.forEach((name, i) => {
+        const item = document.createElement('div');
+        item.className = 'accordion-item';
+        const btn = document.createElement('button');
+        btn.className = 'accordion-btn';
+        btn.innerText = name; 
+        btn.addEventListener('click', () => {
+            const isActive = btn.classList.contains('active-title');
+
+            if (settings && typeof settings.resetPose === 'function') {
+                settings.resetPose();
+                console.log("Navigazione sezioni: Reset posizione attivato.");
+            }
+
+            const armControls = document.getElementById('custom-arm-controls');
+            if (armControls) armControls.classList.remove('visible');
+
+            document.querySelectorAll('.accordion-btn').forEach(b => b.classList.remove('active-title'));
+            hotspotElements.forEach(h => h.element.style.display = 'none');
+            commHotspotElements.forEach(h => h.element.style.display = 'none');
+            
+            let arm1Time = 0; 
+            let isArm1SectionActive = false;
+            const ARM1_CYCLE_DURATION = 30;
+
+            isWheelsSectionActive = false;
+            isMastSectionActive = false;
+
+            if (!isActive) {
+                btn.classList.add('active-title'); 
+                const sourceElement = document.getElementById(`info-${i}`);
+                const detailTitle = document.getElementById('detail-title');
+                const detailDesc = document.getElementById('detail-description');
+
+                if (sourceElement) {
+                    detailTitle.innerText = sourceElement.getAttribute('data-title');
+                    detailDesc.innerHTML = sourceElement.innerHTML;
+                    rightLabels.style.display = "block";
+                }
+
+                const vp = viewpoints[i]; 
+                if (vp) {
+                    targetCameraPos.set(vp.pos.x, vp.pos.y, vp.pos.z);
+                    centerOffset.set(vp.target.x, vp.target.y, vp.target.z);
+                    isTransitioning = true; 
+                    activeTrackedObject = roverParts[vp.part] || roverParts.wheelMap[vp.part];
+                }
+
+                if (i === 7) {
+                    if (armControls) armControls.classList.add('visible');
+                }
+
+                if (i === 5) { 
+                    isWheelsSectionActive = true;
+                    infoLine.style.opacity = "1";
+                    anchorPoint.style.opacity = "1";
+                }
+                else if (i === 6) { 
+                    isMastSectionActive = true;
+                    mastTime = 0; // Reset timer animazione
+                    infoLine.style.opacity = "1";
+                    anchorPoint.style.opacity = "1";
+                }
+                else if (i === 2) { 
+                    infoLine.style.opacity = "0";
+                    extraLine.style.opacity = "0";
+                    anchorPoint.style.opacity = "0";
+                    hotspotElements.forEach(h => h.element.style.display = 'block');
+                } 
+                else if (i === 4) { 
+                    infoLine.style.opacity = "0";
+                    extraLine.style.opacity = "0";
+                    anchorPoint.style.opacity = "0";
+                    if (commHotspotElements.length === 0) {
+                        communicationHotspots.forEach(data => {
+                            const el = document.createElement('div');
+                            el.className = 'hotspot pulsing';
+                            el.dataset.label = data.label;
+                            hotspotContainer.appendChild(el);
+                            el.addEventListener('mouseenter', () => {
+                                tooltip.innerText = el.dataset.label;
+                                tooltip.style.display = 'block';
+                            });
+                            el.addEventListener('mouseleave', () => {
+                                tooltip.style.display = 'none';
+                            });
+                            commHotspotElements.push({ element: el, worldPos: data.pos });
+                        });
+                    }
+                    commHotspotElements.forEach(h => h.element.style.display = 'block');
+                } 
+                else {
+                    infoLine.style.opacity = "1";
+                    extraLine.style.opacity = "1";
+                    anchorPoint.style.opacity = "1";
+                }
+            } else {
+                resetToHome();
+            }
+        });
+        item.appendChild(btn);
+        accordionContainer.appendChild(item);
+    });
+}
+        
+        accordionContainer.innerHTML = ''; 
+        titleNames.forEach((name, i) => {
+        const item = document.createElement('div');
+        item.className = 'accordion-item';
+        const btn = document.createElement('button');
+        btn.className = 'accordion-btn';
+        btn.innerText = name; 
+        btn.addEventListener('click', () => {
+            const isActive = btn.classList.contains('active-title');
+            if (settings && typeof settings.resetPose === 'function') {
+                settings.resetPose();
+                console.log("Navigazione sezioni: Reset posizione attivato.");
+            }
+            document.querySelectorAll('.accordion-btn').forEach(b => b.classList.remove('active-title'));
+            hotspotElements.forEach(h => h.element.style.display = 'none');
+            commHotspotElements.forEach(h => h.element.style.display = 'none');
+            let mastTime = 0;
+            let isMastSectionActive = false; 7
+            let arm1Time = 0; 
+            let isArm1SectionActive = false;
+            const ARM1_CYCLE_DURATION = 30;
+            isWheelsSectionActive = false;
+            isMastSectionActive = false;
+            if (!isActive) {
+                btn.classList.add('active-title'); 
+                const sourceElement = document.getElementById(`info-${i}`);
+                const detailTitle = document.getElementById('detail-title');
+                const detailDesc = document.getElementById('detail-description');
+                if (sourceElement) {
+                    detailTitle.innerText = sourceElement.getAttribute('data-title');
+                    detailDesc.innerHTML = sourceElement.innerHTML;
+                    rightLabels.style.display = "block";
+                }
+                const vp = viewpoints[i]; 
+                if (vp) {
+                    targetCameraPos.set(vp.pos.x, vp.pos.y, vp.pos.z);
+                    centerOffset.set(vp.target.x, vp.target.y, vp.target.z);
+                    isTransitioning = true; 
+                    activeTrackedObject = roverParts[vp.part] || roverParts.wheelMap[vp.part];
+                }
+                if (i === 5) {
+                    isWheelsSectionActive = true;
+                }
+                else if (i === 2) { 
+                    infoLine.style.opacity = "0";
+                    extraLine.style.opacity = "0";
+                    anchorPoint.style.opacity = "0";
+                    hotspotElements.forEach(h => h.element.style.display = 'block');
+                } 
+                else if (i === 4) { 
+                    infoLine.style.opacity = "0";
+                    extraLine.style.opacity = "0";
+                    anchorPoint.style.opacity = "0";
+                    if (commHotspotElements.length === 0) {
+                        communicationHotspots.forEach(data => {
+                            const el = document.createElement('div');
+                            el.className = 'hotspot pulsing';
+                            el.dataset.label = data.label;
+                            hotspotContainer.appendChild(el);
+                            el.addEventListener('mouseenter', () => {
+                                tooltip.innerText = el.dataset.label;
+                                tooltip.style.display = 'block';
+                            });
+                            el.addEventListener('mouseleave', () => {
+                                tooltip.style.display = 'none';
+                            });
+                            commHotspotElements.push({ element: el, worldPos: data.pos });
+                        });
+                    }
+                    commHotspotElements.forEach(h => h.element.style.display = 'block');
+                } 
+                else if (i === 7) { 
+                isArm1SectionActive = true;
+                arm1Time = 0;
+                infoLine.style.opacity = "1";
+                anchorPoint.style.opacity = "1";
+            }
+                else {
+                    hotspotElements.forEach(h => h.element.style.display = 'none');
+                    commHotspotElements.forEach(h => h.element.style.display = 'none');
+                    infoLine.style.opacity = "1";
+                    extraLine.style.opacity = "1";
+                    anchorPoint.style.opacity = "1";
+                }
+            } else {
+                resetToHome();
+            }
+        });
+        item.appendChild(btn);
+        accordionContainer.appendChild(item);
+    });
+function resetAccordionUI() {
+        document.querySelectorAll('.accordion-btn').forEach(btn => {
+            btn.classList.remove('active-title');
+        });
+        const rightLabels = document.getElementById('right-labels');
+        if (rightLabels) {
+            rightLabels.style.display = "none";
+        }
+        const infoLine = document.getElementById('info-line');
+        const extraLine = document.getElementById('extra-line');
+        const anchorPoint = document.getElementById('anchor-point');
+        if (infoLine) infoLine.style.opacity = "0";
+        if (extraLine) extraLine.style.opacity = "0";
+        if (anchorPoint) anchorPoint.style.opacity = "0";
+        const hotspots = document.querySelectorAll('.hotspot');
+        hotspots.forEach(h => h.style.display = 'none');
+        resetToHome();
+    }
+    function resetToHome() {
+    infoLine.style.opacity = "0";
+    extraLine.style.opacity = "0";
+    anchorPoint.style.opacity = "0";
+    rightLabels.style.display = "none";
+    activeTrackedObject = null;
+    targetCameraPos.copy(defaultCameraPos);
+    centerOffset.copy(defaultTargetPos);
+    isTransitioning = true;
+}
+        const gui = new GUI({ title: '⚙️ SETTINGS' }).close();
+        const folderLines = gui.addFolder('Background');
+        folderLines.addColor(settings, 'backgroundColor').name('Color').onChange(c => scene.background = new THREE.Color(c));
+        const folderAnim = gui.addFolder('Rover Controls');
+        folderAnim.add(settings, 'isRotating').name('🡱  Move');
+        folderAnim.add(settings, 'steeringAngle', -40, 40).name('🡰 🡲  Steering').step(0.1); 
+        folderAnim.add(settings, 'resetPose').name('RESET');
+        
+        
+                function initModel() {
+            const loader = new GLTFLoader();
+            loader.load('/../3d_model/Perseverance_Rover_Rigged.glb', (gltf) => {
+                document.getElementById('instructions').style.display = 'none';
+                setupRover(gltf);
+                setupAccordion();
+                setupCustomSliders();
+            }, (xhr) => {
+                console.log((xhr.loaded / xhr.total * 100) + '% caricato');
+            }, (error) => {
+                console.error('Errore nel caricamento del modello:', error);
+                document.querySelector('#instructions p').innerText = "Errore: File .glb non trovato.";
+            });
+            setTimeout(() => {
+            sidePanel.classList.remove('closed');
+            toggleBtn.innerHTML = '&#8592;'; // Ora la freccia verrà visualizzata correttamente
+            }, 1000);
+        }
+        function setupRover(gltf) {
+
+            roverParts.wheels = [];
+            if (roverGroup) scene.remove(roverGroup);
+            roverGroup = gltf.scene;
+            roverGroup.traverse((node) => {
+                if (node.name === 'arm') { 
+                    roverParts.arm = node; 
+                    roverParts.armMainInitialZ = node.rotation.z; 
+                }
+                if (node.name === 'turret_obj') { 
+                    roverParts.turret_obj = node; 
+                    roverParts.turretInitialY = node.rotation.y; 
+                }
+                if (node.name === 'suspension1505') { 
+                    roverParts.suspension1505 = node; 
+                }
+                if (node.name === 'Body' || node.name === 'body' || node.name === 'Chassis') {
+                    roverParts.body = node;
+                }
+                if (node.name.toLowerCase() === 'lab') {
+                    roverParts.lab = node;
+                }
+                if (node.name.toLowerCase().includes('rtg') || node.name.toLowerCase().includes('generator')) {
+                    roverParts.rtg = node;
+                }
+                if (node.name === 'S2') {
+                    roverParts.S2 = node;
+                }
+if (targetWheelNames.includes(node.name)) {
+    roverParts.wheels.push(node);
+    
+    node.userData.initialRotationX = node.rotation.x;
+
+    if (['R1', 'S1', 'R3', 'S3'].includes(node.name)) {
+        roverParts.wheelMap[node.name] = node;
+    }
+    if (['R2', 'S2'].includes(node.name)) {
+        roverParts.wheelMap[node.name] = node;
+    }
+}
+                // --- Rilevamento CORPO (Body) ---
+                if (node.name === 'Body' || node.name === 'body' || node.name === 'Chassis') {
+                    roverParts.body = node; 
+                }
+                // --- Rilevamento Sterzo ---
+                if (node.name === 'SterzoRF') { roverParts.steering.RF = node; roverParts.steeringInit.RF = node.rotation.y; }
+                if (node.name === 'SterzoSF') { roverParts.steering.SF = node; roverParts.steeringInit.SF = node.rotation.y; }
+                if (node.name === 'SterzoRB') { roverParts.steering.RB = node; roverParts.steeringInit.RB = node.rotation.y; }
+                if (node.name === 'SterzoSB') { roverParts.steering.SB = node; roverParts.steeringInit.SB = node.rotation.y; }
+                // --- Rilevamento Braccio 1 e Testata ---
+                if (node.name === 'arm003') { roverParts.arm003 = node; roverParts.arm003InitialY = node.rotation.y; }
+                if (node.name === 'arm002') { roverParts.arm002 = node; roverParts.arm002InitialZ = node.rotation.z; }
+                if (node.name === 'arm') { roverParts.armMain = node; roverParts.armMainInitialZ = node.rotation.z; }
+                if (node.name === 'arm004') { roverParts.arm004 = node; roverParts.arm004InitialZ = node.rotation.z; }
+                if (node.name === 'turret_obj') { roverParts.turret = node; roverParts.turretInitialY = node.rotation.y; }
+                // --- Rilevamento Braccio 2 (Collo/Testa) ---
+                if (node.name === 'bottom003') { roverParts.bottom003 = node; roverParts.b2BottomInitX = node.rotation.x; }
+                if (node.name === 'top') { roverParts.top = node; roverParts.b2TopInitY = node.rotation.y; }
+                if (node.name === 'head') { roverParts.head = node; roverParts.b2HeadInitX = node.rotation.x; }
+                // --- Ombre e Materiali ---
+                if (node.isMesh) {
+                    node.castShadow = true; 
+                    node.receiveShadow = true;
+                    if(node.material) {
+                        node.material.userData.originalMetalness = node.material.metalness;
+                        node.material.userData.originalRoughness = node.material.roughness;
+                    }
+                }
+            });
+            // --- Vincoli Gerarchici (Parenting) ---
+            if (roverParts.steering.RF && roverParts.wheelMap.R1) roverParts.steering.RF.attach(roverParts.wheelMap.R1);
+            if (roverParts.steering.SF && roverParts.wheelMap.S1) roverParts.steering.SF.attach(roverParts.wheelMap.S1);
+            if (roverParts.steering.RB && roverParts.wheelMap.R3) roverParts.steering.RB.attach(roverParts.wheelMap.R3);
+            if (roverParts.steering.SB && roverParts.wheelMap.S3) roverParts.steering.SB.attach(roverParts.wheelMap.S3);
+            if (roverParts.bottom003) {
+                const originalParent = roverParts.bottom003.parent;
+                originalParent.add(roverParts.bottomPivot);
+                roverParts.bottomPivot.position.copy(roverParts.bottom003.position);
+                roverParts.bottomPivot.add(roverParts.bottom003);
+                roverParts.bottom003.position.set(0,0,0);
+            }
+            if (roverParts.bottom003 && roverParts.top) roverParts.bottom003.attach(roverParts.top);
+            if (roverParts.top && roverParts.head) roverParts.top.attach(roverParts.head);
+            const box = new THREE.Box3().setFromObject(roverGroup);
+            const size = box.getSize(new THREE.Vector3());
+            const center = box.getCenter(new THREE.Vector3());
+            roverGroup.position.sub(center); 
+            roverGroup.position.y = 0.1;
+            // --- Calcolo Camera Iniziale ---
+            const maxDim = Math.max(size.x, size.y, size.z);
+            const fov = camera.fov * (Math.PI / 180);
+            let cameraDistance = Math.abs(maxDim / 2 / Math.tan(fov / 2)) * 0.8;
+            defaultCameraPos.set(cameraDistance, cameraDistance * 0.6, cameraDistance);
+            defaultTargetPos.set(0, 1, 0);
+            targetCameraPos.copy(defaultCameraPos);
+            centerOffset.copy(defaultTargetPos);
+            isTransitioning = true;
+            scene.add(roverGroup);
+            updateMaterials(); 
+        }
+        
+        function setupCustomSliders() {
+    const armConfigs = [
+        { id: 'input-armAngle', setting: 'armAngle', min: settings.armLimitMin, max: settings.armLimitMax },
+        { id: 'input-arm2Angle', setting: 'arm2Angle', min: settings.arm2LimitMin, max: settings.arm2LimitMax },
+        { id: 'input-arm3Angle', setting: 'arm3Angle', min: settings.arm3LimitMin, max: settings.arm3LimitMax },
+        { id: 'input-arm4Angle', setting: 'arm4Angle', min: settings.arm4LimitMin, max: settings.arm4LimitMax },
+        { id: 'input-turretAngle', setting: 'turretAngle', min: settings.turretLimitMin, max: settings.turretLimitMax }
+    ];
+
+    armConfigs.forEach(conf => {
+        const el = document.getElementById(conf.id);
+        if (el) {
+            el.min = conf.min;
+            el.max = conf.max;
+            el.value = settings[conf.setting];
+            el.addEventListener('input', (e) => {
+                settings[conf.setting] = parseFloat(e.target.value);
+            });
+        }
+    });
+
+    const resetBtn = document.getElementById('reset-arm-btn');
+    if (resetBtn) {
+        resetBtn.addEventListener('click', () => {
+            armConfigs.forEach(conf => {
+                const el = document.getElementById(conf.id);
+                if (el) {
+                    settings[conf.setting] = 0;
+                    el.value = 0;
+                }
+            });
+        });
+    }
+}
+        let wheelTime = 0;
+        let isWheelsSectionActive = false;
+
+        function animate() {
+    requestAnimationFrame(animate); 
+
+    if (typeof lastArmSectionState !== 'undefined' && lastArmSectionState === true && isArm1SectionActive === false) {
+        const resetBtn = document.getElementById('reset-arm-btn');
+        if (resetBtn) {
+            resetBtn.click();
+        }
+    }
+    lastArmSectionState = isArm1SectionActive;
+
+    hotspotElements.forEach(h => {
+        if (h.element.style.display === 'block') {
+            const screenPos = h.worldPos.clone().project(camera);
+            const x = (screenPos.x * 0.5 + 0.5) * window.innerWidth;
+            const y = (-(screenPos.y * 0.5) + 0.5) * window.innerHeight;
+            h.element.style.left = `${x}px`;
+            h.element.style.top = `${y}px`;
+            h.element.style.opacity = screenPos.z < 1 ? "1" : "0";
+            if (tooltip.style.display === 'block' && tooltip.innerText === h.element.dataset.label) {
+                tooltip.style.left = `${x + 20}px`; 
+                tooltip.style.top = `${y - 10}px`;  
+            }
+        }
+    });
+
+    commHotspotElements.forEach(h => {
+        if (h.element.style.display === 'block') {
+            const screenPos = h.worldPos.clone().project(camera);
+            const x = (screenPos.x * 0.5 + 0.5) * window.innerWidth;
+            const y = (-(screenPos.y * 0.5) + 0.5) * window.innerHeight;
+            h.element.style.left = `${x}px`;
+            h.element.style.top = `${y}px`;
+            h.element.style.opacity = screenPos.z < 1 ? "1" : "0";
+            if (tooltip.style.display === 'block' && tooltip.innerText === h.element.dataset.label) {
+                tooltip.style.left = `${x + 20}px`;
+                tooltip.style.top = `${y - 10}px`;
+            }
+        }
+    });
+
+    if (isTransitioning) {
+        camera.position.lerp(targetCameraPos, 0.04);
+        controls.target.lerp(centerOffset, 0.04);
+        controls.update();
+        const distCamera = camera.position.distanceTo(targetCameraPos);
+        const distTarget = controls.target.distanceTo(centerOffset);
+        if (distCamera < 0.001 && distTarget < 0.001) {
+            isTransitioning = false;
+        }
+    } else {
+        controls.update();
+    }
+
+let effectiveRotationSpeed = settings.isRotating ? settings.rotationSpeed : 0;
+if (isWheelsSectionActive) {
+    effectiveRotationSpeed = 0.005; 
+}
+
+if (!isWheelsSectionActive && !settings.isRotating) {
+    currentRotationSpeed = 0; 
+} else {
+    currentRotationSpeed = THREE.MathUtils.lerp(currentRotationSpeed, effectiveRotationSpeed, 0.01);
+}
+
+if (roverParts.wheels.length > 0) {
+    roverParts.wheels.forEach(wheel => {
+        const targetX = wheel.userData.initialRotationX || 0;
+
+        if (Math.abs(currentRotationSpeed) > 0.0001) {
+            wheel.rotation.x += currentRotationSpeed;
+            wheel.rotation.x %= (Math.PI * 2); // Mantiene il range 0-2PI
+        } 
+        else {
+            let diff = targetX - wheel.rotation.x;
+
+            if (diff > Math.PI) diff -= Math.PI * 2;
+            if (diff < -Math.PI) diff += Math.PI * 2;
+
+            if (Math.abs(diff) > 0.001) {
+                wheel.rotation.x += diff * 0.01; 
+            } else {
+                wheel.rotation.x = targetX;
+            }
+        }
+    });
+}
+
+    const steerSmoothness = 0.05;
+    let steerRad;
+    if (isWheelsSectionActive) {
+        wheelTime += 0.005;
+        const autoSteerAngle = Math.sin(wheelTime) * 30; 
+        steerRad = -THREE.MathUtils.degToRad(autoSteerAngle);
+    } else {
+        steerRad = -THREE.MathUtils.degToRad(settings.steeringAngle);
+    }
+    if (roverParts.steering.RF) {
+        const tRF = roverParts.steeringInit.RF + steerRad;
+        roverParts.steering.RF.rotation.y = THREE.MathUtils.lerp(roverParts.steering.RF.rotation.y, tRF, steerSmoothness);
+    }
+    if (roverParts.steering.SF) {
+        const tSF = roverParts.steeringInit.SF + steerRad;
+        roverParts.steering.SF.rotation.y = THREE.MathUtils.lerp(roverParts.steering.SF.rotation.y, tSF, steerSmoothness);
+    }
+    if (roverParts.steering.RB) {
+        const tRB = roverParts.steeringInit.RB - steerRad;
+        roverParts.steering.RB.rotation.y = THREE.MathUtils.lerp(roverParts.steering.RB.rotation.y, tRB, steerSmoothness);
+    }
+    if (roverParts.steering.SB) {
+        const tSB = roverParts.steeringInit.SB - steerRad;
+        roverParts.steering.SB.rotation.y = THREE.MathUtils.lerp(roverParts.steering.SB.rotation.y, tSB, steerSmoothness);
+    }
+
+    // --- CONTROLLO BRACCIO 1 ---
+    const armSmoothness = 0.003; 
+    if (roverParts.arm003) {
+        const targetRotY = roverParts.arm003InitialY + THREE.MathUtils.degToRad(settings.armAngle);
+        roverParts.arm003.rotation.y = THREE.MathUtils.lerp(roverParts.arm003.rotation.y, targetRotY, armSmoothness);
+    }
+    if (roverParts.arm002) {
+        const targetRotZ = roverParts.arm002InitialZ + THREE.MathUtils.degToRad(settings.arm2Angle);
+        roverParts.arm002.rotation.z = THREE.MathUtils.lerp(roverParts.arm002.rotation.z, targetRotZ, armSmoothness);
+    }
+    if (roverParts.armMain) {
+        const targetRotZ3 = roverParts.armMainInitialZ + THREE.MathUtils.degToRad(settings.arm3Angle);
+        roverParts.armMain.rotation.z = THREE.MathUtils.lerp(roverParts.armMain.rotation.z, targetRotZ3, armSmoothness);
+    }
+    if (roverParts.arm004) {
+        const targetRotZ4 = roverParts.arm004InitialZ + THREE.MathUtils.degToRad(settings.arm4Angle);
+        roverParts.arm004.rotation.z = THREE.MathUtils.lerp(roverParts.arm004.rotation.z, targetRotZ4, armSmoothness);
+    }
+    if (roverParts.turret) {
+        const targetRotYTurret = roverParts.turretInitialY + THREE.MathUtils.degToRad(settings.turretAngle);
+        roverParts.turret.rotation.y = THREE.MathUtils.lerp(roverParts.turret.rotation.y, targetRotYTurret, armSmoothness);
+    }
+
+    // --- LOGICA ANIMAZIONE COLLO E TESTA (BRACCIO 2) ---
+    if (isMastSectionActive) {
+        mastTime += (Math.PI * 2) / (60 * 30); 
+        const factor = (Math.sin(mastTime - Math.PI / 2) + 1) / 2;
+        const armSmoothnessMast = 0.05;
+        // BOTTOM003 - Movimento Diagonale
+        if (roverParts.bottom003) {
+            const customAxis = new THREE.Vector3(1, 0, 1.5).normalize(); 
+            const targetAngle = roverParts.b2BottomInitX + THREE.MathUtils.degToRad(45 * factor);
+            const targetQuaternion = new THREE.Quaternion().setFromAxisAngle(customAxis, targetAngle);
+            roverParts.bottom003.quaternion.slerp(targetQuaternion, armSmoothnessMast);
+        }
+        // TOP - Rotazione Y
+        if (roverParts.top) {
+            const tY = roverParts.b2TopInitY + THREE.MathUtils.degToRad(-55 * factor);
+            roverParts.top.rotation.y = THREE.MathUtils.lerp(roverParts.top.rotation.y, tY, armSmoothnessMast);
+        }
+        // HEAD - Rotazione X
+        if (roverParts.head) {
+            const tXHead = roverParts.b2HeadInitX + THREE.MathUtils.degToRad(-40 * factor);
+            roverParts.head.rotation.x = THREE.MathUtils.lerp(roverParts.head.rotation.x, tXHead, armSmoothnessMast);
+        }
+    } 
+    else {
+        const resetSmoothness = 0.03; 
+        if (roverParts.bottom003) {
+            const customAxis = new THREE.Vector3(1, 0, 1.5).normalize();
+            const targetQuaternion = new THREE.Quaternion().setFromAxisAngle(customAxis, roverParts.b2BottomInitX);
+            roverParts.bottom003.quaternion.slerp(targetQuaternion, resetSmoothness);
+        }
+        if (roverParts.top) {
+            roverParts.top.rotation.y = THREE.MathUtils.lerp(roverParts.top.rotation.y, roverParts.b2TopInitY, resetSmoothness);
+        }
+        if (roverParts.head) {
+            roverParts.head.rotation.x = THREE.MathUtils.lerp(roverParts.head.rotation.x, roverParts.b2HeadInitX, resetSmoothness);
+        }
+    }
+
+    if (activeTrackedObject) {
+        const vector = new THREE.Vector3();
+        activeTrackedObject.getWorldPosition(vector);
+        vector.project(camera);
+        const xStart = (vector.x * 0.5 + 0.5) * window.innerWidth;
+        const yStart = (vector.y * -0.5 + 0.5) * window.innerHeight;
+        const xElbow = window.innerWidth - lineSettings.elbowOffset; 
+        const yElbow = yStart; 
+        const xEndRed = window.innerWidth - lineSettings.endOffset; 
+        const yEndRed = lineSettings.labelTop; 
+        infoLine.setAttribute('points', `${xStart},${yStart} ${xElbow},${yElbow} ${xEndRed},${yEndRed}`);
+        infoLine.style.opacity = "1";
+        const xGreenEnd = window.innerWidth - lineSettings.labelRightMargin;
+        extraLine.setAttribute('x1', xEndRed);
+        extraLine.setAttribute('y1', yEndRed);
+        extraLine.setAttribute('x2', xGreenEnd);
+        extraLine.setAttribute('y2', yEndRed);
+        extraLine.style.opacity = "1";
+        anchorPoint.setAttribute('cx', xStart);
+        anchorPoint.setAttribute('cy', yStart);
+        anchorPoint.setAttribute('r', lineSettings.anchorRadius);
+        anchorPoint.style.fill = lineSettings.anchorColor;
+        anchorPoint.style.opacity = "1";
+    }
+
+    renderer.render(scene, camera);
+}
+
+window.addEventListener('resize', () => {
+    camera.aspect = window.innerWidth / window.innerHeight;
+    camera.updateProjectionMatrix();
+    renderer.setSize(window.innerWidth, window.innerHeight);
+});
+
+let lastArmSectionState = false;
+
+initModel();
+animate();
+
+const backBtn = document.getElementById('toggle-panel-home');
+if (backBtn) {
+    backBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        const fadeOverlay = document.getElementById('fade-overlay');
+        fadeOverlay.classList.add('active');
+        setTimeout(() => {
+            window.location.href = '../../index.html';
+        }, 800);
+    });
+}
+    </script>
+</body>
+
+</html>
